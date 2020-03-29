@@ -1,7 +1,7 @@
 // eslint-disable-next-line editor.codeActionsOnSave
 <template>
   <header class="nav">
-    <a class="nav__link" href="#intro">
+    <a class="nav__link" href="#home">
       <img class="nav__icon" id="home_icon" src="../assets/svg/home.svg" alt="home" />
       <span class="nav__text">Home</span>
     </a>
