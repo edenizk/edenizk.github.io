@@ -1,6 +1,6 @@
 // eslint-disable-next-line editor.codeActionsOnSave
 <template>
-  <div class="nav">
+  <header class="nav">
     <a class="nav__link" href="#intro">
       <img class="nav__icon" id="home_icon" src="../assets/svg/home.svg" alt="home" />
       <span class="nav__text">Home</span>
@@ -27,7 +27,7 @@
       <span class="nav__text">Contact</span>
     </a>
     <!-- <a class="nav_link" href="sitemap.xml">sitemap</a> -->
-  </div>
+  </header>
 </template>
 
 <script>
