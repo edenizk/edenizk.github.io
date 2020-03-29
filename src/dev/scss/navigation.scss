@@ -1,0 +1,84 @@
+.nav{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    &__link{
+        display: flex;
+    }
+
+    &__text{
+        display: none;
+        font-weight: 900;
+        text-decoration: underline;
+        color: black;
+    }
+
+    &__icon{
+        position: relative;
+        float: left;
+        margin-right: 0.2vw;
+        width: 1.5vw;
+        height: 1.5vw;
+        border: 0.1vw black solid;
+        padding: 0.1vw;
+        border-radius: 50%;
+        transition: 0.8s;
+
+        &:hover{
+            width: 1.8vw;
+            height: 1.8vw;
+            border: 0.2vw black solid;
+            background: white;
+        }
+
+        &:hover + .nav__text{
+            visibility: visible;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 1s linear;
+        }
+    }
+}
+  
+  #nav_buttons {
+    position: fixed;
+    margin: 2vh;
+    z-index: 90;
+    height: 4vw;
+  }
+  
+  #working_text {
+    color: black;
+    font-size: 1.5vh;
+    float: right;
+  }
+  
+  
+  @media (orientation: portrait) {
+    .nav{
+        &__icon{
+            width: 1.5vh;
+            height: 1.5vh;
+            margin-right: 0.2vh;
+            border: 0.1vh black solid;
+            padding: 0.1vh;
+
+            &:hover{
+                width: 1.8vh;
+                height: 1.8vh;
+                border: 0.2vh black solid;
+                margin: 0.2vh;
+            }
+        }
+
+        &__text{
+            display: block;
+            margin:auto;
+            bottom: 0;
+            opacity: 1;
+            font-size: 1vh;
+            margin-right: 10px;
+        }
+    }
+ 
+  }
