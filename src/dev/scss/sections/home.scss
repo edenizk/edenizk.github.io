@@ -1,14 +1,98 @@
-h3 {
-  margin: 40px 0 0;
+.home{
+  position: relative;
+  background-color: #dcf3ff;
+  height: 100vh;
+
+  &__title{
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+    text-align: center;
+    z-index: 10;
+    color: black;
+    font-weight: 900;
+    font-size: 10vh;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    & span{
+      color:#ED4A01;
+    }
+  }
+  &__sun{
+    position: absolute;
+    width: 20vh;
+    top: 20px;
+    right: 20px;
+    bottom: 10%;
+  }
+
+  &__city{
+    position: absolute;
+    bottom: 40vh;
+    right: 0px;
+    width: 85vh;
+    z-index: 1;
+  }
+
+  &__sea{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    background-color: #0180ed;
+    z-index: 0;
+  }
+
+  &__front{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+  }
+
+  &__down-arrow{
+    & a span{
+      position: absolute;
+      bottom: 5vh;
+      right: 5%;
+      width: 8vh;
+      height: 8vh;
+      border-left: 0.5vh solid #fff;
+      border-bottom: 0.5vh solid #fff;
+      transform: rotate(-45deg);
+      animation: down 2s infinite;
+      box-sizing: border-box;
+      transition: 0.3s;
+    
+      &:hover {
+        border-color: #000;
+      }
+    }
+  }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+@media (orientation: portrait) {
+  .my_title {
+    top: auto;
+    left: auto;
+    bottom: 20vh;
+    font-size: 5vh;
+    width: 100%;
+    left: auto;
+    text-align: center;
+  }
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: tomato;
+
+@keyframes down {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    transform: rotate(-45deg) translate(-0.8vw, 0.8vw);
+  }
+
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
 }
