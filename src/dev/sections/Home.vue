@@ -9,7 +9,7 @@
       <div class="home__sea"></div>
       <img class="home__front" src="../../assets/svg/front_bank.svg" alt="bench and ground">
       <div class="home__down-arrow">
-        <a href="#main_underground" aria-label="Continue">
+        <a href="#underground" aria-label="Continue">
           <span></span>
         </a>
       </div>

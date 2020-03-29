@@ -5,7 +5,7 @@
             src="../../assets/svg/earth_with_pipes.svg"
             alt="earth with pipes"
         />
-        <div class="undergrd__main">
+        <div class="undergrd__main" id="underground">
             <div class="undergrd__text">
                 <h2>
                     Thank You For Visiting My<br>
