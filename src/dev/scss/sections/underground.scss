@@ -1,0 +1,54 @@
+.undergrd{
+    position: relative;
+    background-color: #3a3532;
+
+    &__image{
+        width: 100%;
+    }
+
+    &__main{
+        position: relative;
+        height: 110vh;
+        display: flex;
+    }
+
+    &__text{
+        display: flex;
+        text-align: center;
+        align-self: center;
+        font-size: 8vh;
+        color: white;
+        font-weight: 700;
+        width: 100%;
+
+        & h2{
+            width: 100%;
+
+            & span{
+                color: $dim-highlight;
+            }
+        }
+
+
+
+
+        &::before,
+        &::after{
+            content: '';
+            z-index: 100;
+            width: 100%;
+            display: block;
+            height: 5px;
+            background-color: white;
+            margin: auto;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    &__stone{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}
