@@ -10,8 +10,8 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
 
+  build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,8 +24,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install --frozen-lockfile
-    - run: yarn build
-    - run: yarn test
+    - name: Clear Install
+      run: yarn install --frozen-lockfile
+    - name: Building
+      run: yarn build
       env:
         CI: true
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Syntax Check
+        if: success()
+        run: yarn lint
+    env:
+      CI: true
