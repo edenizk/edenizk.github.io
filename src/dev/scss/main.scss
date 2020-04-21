@@ -23,6 +23,12 @@ body{
     z-index: 0;
 }
 
+#sitemap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
 @import 'coin.scss';
 @import './settings/_reset.scss';
 @import './settings/variables.scss';
@@ -34,3 +40,4 @@ body{
 @import './sections/about-me.scss';
 @import './sections/projects.scss';
 @import './sections/contact.scss';
+@import './sections/end.scss';
