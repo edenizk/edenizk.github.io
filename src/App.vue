@@ -5,6 +5,8 @@
     <Underground/>
     <SkillCertificate/>
     <AboutMe/>
+    <Projects/>
+
   </div>
 </template>
 
@@ -16,6 +18,7 @@ import Home from './dev/sections/Home.vue';
 import Underground from './dev/sections/Underground.vue';
 import SkillCertificate from './dev/sections/SkillCertificate.vue';
 import AboutMe from './dev/sections/AboutMe.vue';
+import Projects from './dev/sections/Projects.vue';
 
 import './dev/scss/main.scss';
 
@@ -29,6 +32,7 @@ export default {
     Underground,
     SkillCertificate,
     AboutMe,
+    Projects,
   },
 };
 </script>
