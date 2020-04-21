@@ -3,6 +3,7 @@
     <Navigation/>
     <Home msg="Welcome to Your Home App"/>
     <Underground/>
+    <SkillCertificate/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import 'aos/dist/aos.css';
 import Navigation from './dev/Navigation.vue';
 import Home from './dev/sections/Home.vue';
 import Underground from './dev/sections/Underground.vue';
+import SkillCertificate from './dev/sections/SkillCertificate.vue';
 import './dev/scss/main.scss';
 
 AOS.init();
@@ -22,6 +24,7 @@ export default {
     Navigation,
     Home,
     Underground,
+    SkillCertificate,
   },
 };
 </script>

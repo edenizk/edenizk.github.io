@@ -10,9 +10,11 @@ body{
     overflow-x: hidden;
 }
 
+@import 'coin.scss';
 @import './settings/_reset.scss';
 @import './settings/variables.scss';
 
 @import './navigation.scss';
 @import './sections/home.scss';
 @import './sections/underground.scss';
+@import './sections/skill-certificate.scss';
