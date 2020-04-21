@@ -28,14 +28,8 @@ jobs:
       run: yarn install --frozen-lockfile
     - name: Building
       run: yarn build
+    - name: Syntax Check
+      if: success()
+      run: yarn lint
       env:
         CI: true
-  lint:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Syntax Check
-        if: success()
-        run: yarn lint
-    env:
-      CI: true
