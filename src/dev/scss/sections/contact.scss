@@ -1,0 +1,96 @@
+#contact{
+    overflow: hidden;
+}
+
+#contact_moon {
+    position: absolute;
+    width: 50vh;
+    right: 5vh;
+    top: 5vh;
+  }
+  
+  #contact_text {
+    left: 5vw;
+    top: 20vh;
+    position: absolute;
+    text-align: center;
+  }
+  
+  #title_contact {
+    /* position: absolute; */
+    font-weight: 700;
+    color: white;
+    font-size: 8vh;
+    text-align: center;
+    text-shadow: 30px 30px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  #my_email {
+    font-weight: 200;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 30px 30px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  #my_email:hover {
+    font-size: 3.2vw;
+    transition: 0.3s;
+  }
+  
+  .contact_icon img {
+    height: 20vh;
+    transition: 0.3s;
+    margin-right: 3vh;
+  }
+  
+  .contact_icon img:hover {
+    height: 20.5vh;
+  }
+  
+  @media (orientation: portrait) {
+    #contact {
+      text-align: center;
+    }
+  
+    #contact_moon {
+      width: 30vh;
+      right: 5vh;
+      top: 10vh;
+    }
+  
+    #contact_text {
+      left: auto;
+      width: 100%;
+      top: 50vh;
+      position: absolute;
+      text-align: center;
+    }
+  
+    #title_contact {
+      width: 100%;
+      font-size: 4vh;
+    }
+  
+    #my_email {
+      width: 100%;
+      font-size: 3vh;
+    }
+  
+    #my_email:hover {
+      font-size: 3vh;
+    }
+  
+    #contact_icons {
+      width: 100%;
+    }
+  
+    #contact_icons img {
+      width: 10vh;
+    }
+  
+    #contact_icons img:hover {
+      width: 15vh;
+    }
+  }
+  
