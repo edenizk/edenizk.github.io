@@ -27,8 +27,8 @@
       seeker of knowledge and looking for new challenges in programming.
       also trying to learn how to make good design.
       <br />
-      <br />I am also an animal lover, enjoy playing
-      and learning new instruments and like to draw in free time.
+      <br />I am also an animal lover, enjoy playing ukulele
+      and like to make 2D/3D art in free time.
     </div>
     <img
       class="about-me__stars about-me__stars--right stars"
