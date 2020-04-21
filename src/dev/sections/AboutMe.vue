@@ -1,5 +1,5 @@
 <template>
-  <section class="about-me space_sections">
+  <section id="about_me" class="about-me space_sections">
     <img
       class="about-me__stars about-me__stars--left stars"
       data-aos="zoom-in-up"
