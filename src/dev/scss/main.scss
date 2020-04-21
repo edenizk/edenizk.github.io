@@ -10,6 +10,19 @@ body{
     overflow-x: hidden;
 }
 
+.space_sections {
+    position: relative;
+    height: 100vh;
+    background-color: #2e005d;
+}
+
+.stars {
+    position: absolute;
+    opacity: 0.5;
+    width: 50vh;
+    z-index: 0;
+}
+
 @import 'coin.scss';
 @import './settings/_reset.scss';
 @import './settings/variables.scss';
@@ -20,3 +33,4 @@ body{
 @import './sections/skill-certificate.scss';
 @import './sections/about-me.scss';
 @import './sections/projects.scss';
+@import './sections/contact.scss';
