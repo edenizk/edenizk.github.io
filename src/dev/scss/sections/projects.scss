@@ -1,248 +1,251 @@
 .projects {
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    background-color: #2e005d;
+  position: relative;
+  height: 100vh;
+  background-color: #2e005d;
+  overflow: hidden;
 
-    &__title{
-        position: absolute;
-        right: 10vh;
-        top: 10vh;
-        margin: 0;
-        padding: 0;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 5vh;
-        line-height: normal;
-        text-align: center;
-        color: white;
-    }
-    &__stars{
-        position: absolute;
-        &--right{
-            right: 15vh;
-            bottom: 0;
-            transform: rotate(30deg);
-        }
-
-        &--left{
-            top: 10vh;
-            left: 2vh;
-            transform: rotate(180deg);
-        }
-    }
-
-    [data-aos="stars"] {
-        opacity: 0;
-        transition-property: opacity 5s ease;
-      
-        &.aos-animate {
-          opacity: 1;
-        }
-      }
-    // &__starss{
-    //     position: absolute;
-    //     z-index: 0;
-    //     transition: 0.3s;
-    // }
-
-    &__projects-wrapper{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        top: 50%;
-        width: 100%;
-        font-weight: 100;
-        line-height: 61px;
-
-        font-size: 4vh;
-        color: white;
-    }
-  }
-  
-  #cookie_clicker {
-    width: 10vw;
-    left: 2vw;
-    top: 38vh;
-  }
-  
-  #dicer {
-    width: 15vw;
-    left: 15vw;
-    top: 15vh;
-  }
-  
-  #inf_run {
-    width: 14vw;
-    left: 28vw;
-    top: 32vh;
-  }
-  
-  #e-commerce_star {
-    width: 19vw;
-    left: 50vw;
-    top: 55vh;
-  }
-  
-  #lasagna_star {
-    width: 21vw;
-    right: 2vw;
-    top: 40vh;
-  }
-  
-  #sas_star {
-    width: 15vw;
-    right: 22vw;
-    top: 22vh;
-  }
-  
-  #stars_project input:hover {
-    width: 25vw;
-  }
-  
-  #project_comet {
+  &__title {
     position: absolute;
-    right: 90vh;
-    bottom: 20vh;
-  }
-  
-  #Star_3 {
-    transform: scaleY(2);
-    background-color: red;
-    border: 2px blue solid;
-  }
-  
-  #projects_overlay {
-    position: fixed;
-    /* Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 100%;
-    /* Full width (cover the whole page) */
-    height: 100%;
-    /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 100;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover */
-    color: white;
-  }
-  
-  #project_head_info {
-    position: absolute;
-    left: 5vw;
     top: 10vh;
+    right: 10vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
     text-align: center;
   }
-  
-  #project_title {
-    font-family: 900;
-    font-size: 3vw;
+
+  &__stars {
+    position: absolute;
+
+    &--right {
+      right: 15vh;
+      bottom: 0;
+      transform: rotate(30deg);
+    }
+
+    &--left {
+      top: 10vh;
+      left: 2vh;
+      transform: rotate(180deg);
+    }
   }
-  
-  #project_logo {
-    width: 15vw;
-    margin-top: 2vh;
+
+  [data-aos="stars"] {
+    transition-property: opacity 5s ease;
+    opacity: 0;
+
+    &.aos-animate {
+      opacity: 1;
+    }
   }
-  
+
+  // &__starss{
+  //     position: absolute;
+  //     z-index: 0;
+  //     transition: 0.3s;
+  // }
+
+  &__projects-wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 4vh;
+
+    font-weight: 100;
+    line-height: 61px;
+  }
+}
+
+#cookie_clicker {
+  top: 38vh;
+  left: 2vw;
+  width: 10vw;
+}
+
+#dicer {
+  top: 15vh;
+  left: 15vw;
+  width: 15vw;
+}
+
+#inf_run {
+  top: 32vh;
+  left: 28vw;
+  width: 14vw;
+}
+
+#e-commerce_star {
+  top: 55vh;
+  left: 50vw;
+  width: 19vw;
+}
+
+#lasagna_star {
+  top: 40vh;
+  right: 2vw;
+  width: 21vw;
+}
+
+#sas_star {
+  top: 22vh;
+  right: 22vw;
+  width: 15vw;
+}
+
+#stars_project input:hover {
+  width: 25vw;
+}
+
+#project_comet {
+  position: absolute;
+  right: 90vh;
+  bottom: 20vh;
+}
+
+#Star_3 {
+  transform: scaleY(2);
+  border: 2px #0000ff solid;
+  background-color: #ff0000;
+}
+
+#projects_overlay {
+  display: none;
+  /* Sit on top of the page content */
+  position: fixed;
+  /* Hidden by default */
+  top: 0;
+  /* Full width (cover the whole page) */
+  right: 0;
+  /* Full height (cover the whole page) */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  color: #ffffff;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  z-index: 100;
+}
+
+#project_head_info {
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  text-align: center;
+}
+
+#project_title {
+  font-family: 900;
+  font-size: 3vw;
+}
+
+#project_logo {
+  width: 15vw;
+  margin-top: .2vh;
+}
+
+#project_desc {
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+  bottom: 5vh;
+  left: 25vw;
+  padding-left: 3vw;
+  border-left: 1vw #ffffff solid;
+  font-size: 3vw;
+}
+
+#project_desc span {
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+#project_used_tech {
+  margin-top: 1vh;
+  font-size: 1vw;
+  text-align: left;
+}
+
+#project_languages {
+  position: absolute;
+  margin-top: 1vh;
+  font-size: 2vw;
+}
+
+/* Position the close button (top right corner) */
+.close_project_btn {
+  display: block;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  color: #818181;
+  font-size: 6vh;
+  /* Display block instead of inline */
+  z-index: 101;
+}
+
+#project_git_link {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vh;
+  color: #818181;
+  font-size: 2vw;
+  text-decoration: underline;
+}
+
+#project_git_link:hover,
+#project_git_link:focus,
+.close_project_btn:hover,
+.close_project_btn:focus {
+  transition: .3s;
+  color: #ffffff;
+  /* Transition effects on hover (color) */
+}
+
+@media (orientation: portrait) {
+  #project_head_info {
+    top: 2vh;
+    left: auto;
+    width: 100%;
+  }
+
   #project_desc {
     position: absolute;
-    font-size: 3vw;
-    right: 3vw;
-    top: 5vh;
-    bottom: 5vh;
-    left: 25vw;
-    padding-left: 3vw;
-    border-left: 1vw white solid;
+    top: 50%;
+    right: auto;
+    left: auto;
+    padding: 2vh;
+    border-top: 1vw #ffffff solid;
+    border-left: none;
+    font-size: 4vw;
   }
-  
-  #project_desc span {
-    font-weight: 900;
-    font-size: 3vw;
+
+  #project_title {
+    font-size: 6vw;
   }
-  
+
+  #project_logo {
+    width: 20vw;
+  }
+
   #project_used_tech {
-    text-align: left;
-    font-size: 1vw;
-    margin-top: 1vh;
+    font-size: 2vh;
+    text-align: center;
   }
-  
+
   #project_languages {
-    position: absolute;
-    margin-top: 1vh;
-    font-size: 2vw;
+    position: relative;
+    font-size: 6vw;
   }
-  
-  /* Position the close button (top right corner) */
-  .close_project_btn {
-    position: absolute;
-    top: 2vh;
-    right: 2vw;
-    font-size: 6vh;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    z-index: 101;
-  }
-  
-  #project_git_link {
-    position: absolute;
-    text-decoration: underline;
-    font-size: 2vw;
-    color: #818181;
-    right: 2vw;
-    bottom: 2vh;
-  }
-  
-  #project_git_link:hover,
-  #project_git_link:focus,
-  .close_project_btn:hover,
-  .close_project_btn:focus {
-    color: white;
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
-  }
-  
-  @media (orientation: portrait) {
-    #project_head_info {
-      top: 2vh;
-      left: auto;
-      width: 100%;
-    }
-  
-    #project_desc {
-      position: absolute;
-      padding: 2vh;
-      font-size: 4vw;
-      top: 50%;
-      right: auto;
-      left: auto;
-      border-left: 0;
-      border-top: 1vw white solid;
-    }
-  
-    #project_title {
-      font-size: 6vw;
-    }
-  
-    #project_logo {
-      width: 20vw;
-    }
-  
-    #project_used_tech {
-      font-size: 2vh;
-      text-align: center;
-    }
-  
-    #project_languages {
-      position: relative;
-      font-size: 6vw;
-    }
-  }
+}

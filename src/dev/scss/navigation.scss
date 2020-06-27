@@ -1,86 +1,92 @@
-.nav{
-    position: fixed;
-    z-index: 100;
+.nav {
+  display: flex;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 100;
+
+  &__link {
     display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
-    &__link{
-        display: flex;
+  }
+
+  &__text {
+    display: none;
+    color: #000000;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+  &__icon {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: .2vw;
+    padding: .1vw;
+    float: left;
+    transition: .8s;
+    border: .1vw #000000 solid;
+    border-radius: 50%;
+
+    &:hover {
+      transform: scale(1.2);
+      border: .2vw #000000 solid;
+      background: #ffffff;
     }
 
-    &__text{
-        display: none;
-        font-weight: 900;
-        text-decoration: underline;
-        color: black;
+    &:hover+.nav__text {
+      bottom: 0;
+      transition: opacity 1s linear;
+      opacity: 1;
+      visibility: visible;
     }
 
-    &__icon{
-        position: relative;
-        float: left;
-        margin-right: 0.2vw;
-        width: 1.5vw;
-        height: 1.5vw;
-        border: 0.1vw black solid;
-        padding: 0.1vw;
-        border-radius: 50%;
-        transition: 0.8s;
-
-        &:hover{
-            width: 1.8vw;
-            height: 1.8vw;
-            border: 0.2vw black solid;
-            background: white;
-        }
-
-        &:hover + .nav__text{
-            visibility: visible;
-            bottom: 0;
-            opacity: 1;
-            transition: opacity 1s linear;
-        }
+    @media(max-width: $laptop-max) {
+      width: 3vw;
+      height: 3vw;
+      margin-right: 1vw;
     }
+  }
 }
-  
-  #nav_buttons {
-    position: fixed;
-    margin: 2vh;
-    z-index: 90;
-    height: 4vw;
-  }
-  
-  #working_text {
-    color: black;
-    font-size: 1.5vh;
-    float: right;
-  }
-  
-  
-  @media (orientation: portrait) {
-    .nav{
-        &__icon{
-            width: 1.5vh;
-            height: 1.5vh;
-            margin-right: 0.2vh;
-            border: 0.1vh black solid;
-            padding: 0.1vh;
 
-            &:hover{
-                width: 1.8vh;
-                height: 1.8vh;
-                border: 0.2vh black solid;
-                margin: 0.2vh;
-            }
-        }
+#nav_buttons {
+  position: fixed;
+  height: 4vw;
+  margin: 2vh;
+  z-index: 90;
+}
 
-        &__text{
-            display: block;
-            margin:auto;
-            bottom: 0;
-            opacity: 1;
-            font-size: 1vh;
-            margin-right: 10px;
-        }
+#working_text {
+  float: right;
+  color: #000000;
+  font-size: 1.5vh;
+}
+
+
+@media (orientation: portrait) {
+  .nav {
+    &__icon {
+      width: 1.5vh;
+      height: 1.5vh;
+      margin-right: .2vh;
+      padding: .1vh;
+      border: .1vh #000000 solid;
+
+      &:hover {
+        width: 1.8vh;
+        height: 1.8vh;
+        margin: .2vh;
+        border: .2vh #000000 solid;
+      }
     }
- 
+
+    &__text {
+      display: block;
+      bottom: 0;
+      margin: auto;
+      margin-right: 10px;
+      font-size: 1vh;
+      opacity: 1;
+    }
   }
+
+}
