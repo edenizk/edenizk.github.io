@@ -1,5 +1,5 @@
 <template>
-  <section class="space_sections" id="contact">
+  <section class="space_sections contact" id="contact">
     <img
       class="stars"
       style="top: 5vh; right: 5vh; transform: rotate(180deg);"
@@ -25,7 +25,7 @@
         id="my_email">
             ergindenizkosecioglu@gmail.com
        </a>
-      <div id="contact_icons">
+      <div id="contact_icons" class="contact__icons">
         <a
           class="contact_icon"
           target="_blank"

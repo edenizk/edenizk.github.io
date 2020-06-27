@@ -1,3 +1,10 @@
+.contact {
+
+  &__icons {
+    margin-top: 50px;
+  }
+}
+
 //TODO CLEAN IT UP AFTER UPDATING CONTACT SECTION
 #contact {
   overflow: hidden;
@@ -107,7 +114,6 @@
 
   #contact_icons {
     width: 100%;
-    margin-top: 40px;
   }
 
   #contact_icons img {
