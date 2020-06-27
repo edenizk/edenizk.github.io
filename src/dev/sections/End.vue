@@ -5,7 +5,7 @@
         data-aos="fade-up"
         data-aos-duration="3000">
       Ergin Deniz
-      <br />Kosecioglu
+      <br />Kösecioğlu
       <br />
       <span style="color:#0FDFEB;">
         - an
@@ -40,16 +40,12 @@
         data-aos-duration="1500" />
     <img
         class="home__city"
-        style="bottom: 40vh; z-index: 0;"
         src="../../assets/materials/end/city_night.svg"
         alt="city"
         data-aos="fade-left"
         data-aos-duration="1000"
     />
-    <img class="home__sea"
-        style="z-index: 1;"
-        src="../../assets/materials/intro/sea.svg"
-        alt="sea" />
+    <Waves darkWaves=true />
     <img
       class="home__front"
       style="z-index: 2;"
@@ -60,7 +56,12 @@
 </template>
 
 <script>
+import Waves from '../components/waves.vue';
+
 export default {
   name: 'End',
+  components: {
+    Waves,
+  },
 };
 </script>

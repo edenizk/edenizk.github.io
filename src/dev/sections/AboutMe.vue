@@ -19,7 +19,7 @@
     data-aos="fade-up"
     data-aos-duration="2000"
     >
-      My name is Ergin Deniz Kosecioglu,
+      My name is Ergin Deniz Kösecioğlu,
       <br />but...
       <br />You can call me
       <span style="color: #0BFFFF">Deniz</span> :).
