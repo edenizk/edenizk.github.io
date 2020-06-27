@@ -1,4 +1,4 @@
-.undergrd {
+.undergrd { $p: &;
   position: relative;
   background-color: $cBrownBg;
 
@@ -44,6 +44,68 @@
       @media(max-width: $laptop-max) {
         width: 50%;
       }
+    }
+  }
+
+  &__chest {
+    position: absolute;
+    bottom: 5.3vw;
+    width: 36.5vw;
+    height: 17.6vw;
+    background: url('~@/assets/svg/chest_idle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 100;
+    object-fit: cover;
+
+    &:hover {
+      width: 37.7vw;
+      height: 23vw;
+      background: url('~@/assets/svg/chest_waving.svg');
+      background-size: contain;
+
+      #{$p}__chestText {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__chestText {
+    position: absolute;
+    top: -.1vw;
+    right: -1.2vw;
+    padding: 20px 40px;
+    border: 2px $cBlack solid;
+    border-radius: 10px;
+    background: $cWhite;
+    color: $cPurpleText;
+    opacity: 0;
+
+    &::before {
+      position: absolute;
+      bottom: -24px;
+      left: 24px;
+      width: 0;
+      height: 0;
+      transform: skew(-15deg);
+      border: solid 12px transparent;
+      border-top: solid 12px $cBlack;
+      border-left: solid 12px $cBlack;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -19px;
+      left: 27px;
+      width: 0;
+      height: 0;
+      transform: skew(-15deg);
+      border: solid 10px transparent;
+      border-top: solid 10px $cWhite;
+      border-left: solid 10px $cWhite;
+      content: '';
     }
   }
 
