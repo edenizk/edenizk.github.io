@@ -45,7 +45,7 @@
         data-aos="fade-left"
         data-aos-duration="1000"
     />
-    <Waves darkWaves=true />
+    <Waves darkWaves/>
     <img
       class="home__front"
       style="z-index: 2;"
