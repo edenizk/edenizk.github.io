@@ -1,18 +1,10 @@
 <template>
-  <section class="space_sections" id="end">
-    <div class="home__title"
+  <section class="space_sections end" id="end">
+    <div class="home__title end__title"
         style="color: white;"
         data-aos="fade-up"
         data-aos-duration="3000">
-      Ergin Deniz
-      <br />Kösecioğlu
-      <br />
-      <span style="color:#0FDFEB;">
-        - an
-        IT guy -
-      </span>
-      <br />
-      <span>Good Bye</span>
+      GoodBye
     </div>
     <img
       class="stars"

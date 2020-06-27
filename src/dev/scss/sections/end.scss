@@ -1,3 +1,16 @@
+.end {
+  &__title {
+    color: $cWhite;
+    font-weight: 200;
+    text-shadow: 0px 0px 20px $cWhite;  
+
+    @media #{$laptop} {
+      top: 20vw;
+      left: 7vw;
+    }
+  }
+}
+
 #end_comet {
   position: absolute;
   top: 10vh;
