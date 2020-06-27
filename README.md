@@ -1,4 +1,4 @@
-# edenizk.github.io V2 (WIP)
+# [edenizk.github.io](http://bit.ly/deniz-portfolio) V2 (WIP)
 
 This is second version of my portfolio page
 
