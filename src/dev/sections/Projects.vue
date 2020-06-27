@@ -19,11 +19,12 @@
             src="../../assets/materials/projects/comet.svg"
             alt="comet">
             <div id="about_me_text"
-                class="projects__projects-wrapper"
+                class="projects__projectsWrapper"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                Currently under construction but you can visit my GitHub page for my projects :)
-                <a class="contact_icon" target="_blank" href="https://github.com/edenizk"
+                <p class="projects__tempText">Currently under construction but you
+                    can visit my GitHub page for my projects :)</p>
+                <a class="contact__icon" target="_blank" href="https://github.com/edenizk"
                     aria-label="link to my github">
                     <img src="../../assets/materials/contacts/git.svg">
                 </a>

@@ -40,7 +40,7 @@
       visibility: visible;
     }
 
-    @media(max-width: $laptop-max) {
+    @media #{$laptop-max} {
       width: 3vw;
       height: 3vw;
       margin-right: 1vw;

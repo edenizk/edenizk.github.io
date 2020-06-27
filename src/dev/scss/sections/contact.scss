@@ -1,83 +1,77 @@
 .contact {
+  overflow: hidden;
+
+  &__moon {
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    width: 30vw;
+  }
 
   &__icons {
     margin-top: 50px;
   }
+
+  &__text {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 8vh;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 30px 30px 20px rgba(255, 255, 255, .2);
+  }
+
+  &__email {
+    position: relative;
+    transition: transform .3s;
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 30px 30px 20px rgba(255, 255, 255, .5);
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      transition: all .3s ease;
+      background-color: #ffffff;
+      content: '';
+    }
+
+    &:hover {
+      &::after {
+        left: -5px;
+        width: calc(100% + 10px);
+      }
+    }
+  }
+
+  &__icon {
+    img {
+      height: 20vh;
+      margin-right: 3vh;
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 
 //TODO CLEAN IT UP AFTER UPDATING CONTACT SECTION
-#contact {
-  overflow: hidden;
-}
 
-#contact_moon {
-  position: absolute;
-  top: 5vh;
-  right: 5vh;
-  width: 50vh;
-
-  @media(max-width: $laptop-max) {
-    width: 30vh;
-  }
-}
-
-#contact_text {
-  position: absolute;
-  top: 20vh;
-  left: 5vw;
-  text-align: center;
-}
-
-#title_contact {
-  /* position: absolute; */
-  color: #ffffff;
-  font-size: 8vh;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 30px 30px 20px rgba(255, 255, 255, .2);
-}
-
-#my_email {
-  position: relative;
-  transition: transform .3s;
-  color: #ffffff;
-  font-size: 3vw;
-  font-weight: 200;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 30px 30px 20px rgba(255, 255, 255, .5);
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 3px;
-    transition: all .3s ease;
-    background-color: #ffffff;
-    content: '';
-  }
-}
-
-#my_email:hover {
-  // text-decoration: underline;
-
-  &::after {
-    left: -5px;
-    width: calc(100% + 10px);
-  }
-  // font-size: 3.2vw;
-}
-
-.contact_icon img {
-  height: 20vh;
-  margin-right: 3vh;
-  transition: .3s;
-}
-
-.contact_icon img:hover {
-  transform: scale(1.05);
-}
 
 @media (orientation: portrait) {
   #contact {

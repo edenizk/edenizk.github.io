@@ -41,7 +41,7 @@
       content: '';
       z-index: 100;
 
-      @media(max-width: $laptop-max) {
+      @media #{$laptop-max} {
         width: 50%;
       }
     }

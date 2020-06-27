@@ -55,14 +55,13 @@
     line-height: 61px;
     text-align: center;
     z-index: 10;
-
   }
 }
 
 //TODO: CLEAN IT UP AFTER ADDING PROJECTS
-@media(max-width: $laptop-max) {
+@media #{$laptop-max} {
   #about_me_text {
-    left: 10%;
+    // left: 10%;
     width: 80%;
     /* font-size: 3vh; */
   }
@@ -71,9 +70,9 @@
 @media only screen and (max-width: 1400px) {
 
   #about_me_text {
-    position: absolute;
+    // position: absolute;
     top: 20vh;
-    left: 10%;
+    // left: 10%;
     // font-size: 3vh;
   }
 
