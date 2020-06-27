@@ -1,71 +1,73 @@
-.home{
+.home {
   position: relative;
-  background-color: #dcf3ff;
   height: 100vh;
+  background-color: #dcf3ff;
 
-  &__title{
+  &__title {
     position: absolute;
-    left: 10vh;
     top: 10vh;
-    text-align: center;
-    z-index: 10;
-    color: black;
-    font-weight: 900;
+    left: 10vh;
+    color: #000000;
     font-size: 10vh;
-    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-    & span{
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 6px 4px rgba(0, 0, 0, .25);
+    z-index: 10;
+
+    & span {
       color: $highlight;
     }
   }
-  &__sun{
+
+  &__sun {
     position: absolute;
-    width: 20vh;
     top: 20px;
     right: 20px;
     bottom: 10%;
+    width: 20vh;
   }
 
-  &__city{
+  &__city {
     position: absolute;
+    right: 0;
     bottom: 40vh;
-    right: 0px;
     width: 85vh;
     z-index: 1;
   }
 
-  &__sea{
+  &__sea {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 40vh;
     width: 100%;
+    height: 40vh;
     background-color: #0180ed;
     z-index: 0;
   }
 
-  &__front{
+  &__front {
     position: absolute;
-    width: 100%;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
+    width: 100%;
   }
 
-  &__down-arrow{
-    & a span{
+  &__down-arrow {
+    & a span {
       position: absolute;
-      bottom: 5vh;
       right: 5%;
+      bottom: 5vh;
       width: 8vh;
       height: 8vh;
-      border-left: 0.5vh solid #fff;
-      border-bottom: 0.5vh solid #fff;
       transform: rotate(-45deg);
+      transition: .3s;
+      border-bottom: .5vh solid #ffffff;
+      border-left: .5vh solid #ffffff;
       animation: down 2s infinite;
       box-sizing: border-box;
-      transition: 0.3s;
-    
+
       &:hover {
-        border-color: #000;
+        border-color: #000000;
       }
     }
   }
@@ -74,11 +76,10 @@
 @media (orientation: portrait) {
   .my_title {
     top: auto;
-    left: auto;
     bottom: 20vh;
-    font-size: 5vh;
-    width: 100%;
     left: auto;
+    width: 100%;
+    font-size: 5vh;
     text-align: center;
   }
 }
@@ -89,7 +90,7 @@
   }
 
   20% {
-    transform: rotate(-45deg) translate(-0.8vw, 0.8vw);
+    transform: rotate(-45deg) translate(-.8vw, .8vw);
   }
 
   40% {

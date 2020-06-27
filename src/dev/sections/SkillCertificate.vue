@@ -40,8 +40,9 @@
             </div>
         </div>
         <img id="green_pipe"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-easing="ease-in-sine"
+        data-aos-delay="200"
         src="../../assets/materials/skills_certificates/green_pipe.svg" alt="green pipe">
 
         <div class="skill-certificate__certificates-wrapper">

@@ -1,146 +1,145 @@
 .skill-certificate {
   // overflow: hidden;
-    position: relative;
-    min-height: 110vh;
-    background-color: #3a3532;
-    text-align: center;
+  position: relative;
+  min-height: 110vh;
+  background-color: #3a3532;
+  text-align: center;
 
-    &__skill-wrapper{
-      position: absolute;
-      width: 40%;
-      left: 2vh;
-      bottom: 15vh;
-      top: 5vh;
-    }
+  &__skill-wrapper {
+    position: absolute;
+    top: 5vh;
+    bottom: 15vh;
+    left: 2vh;
+    width: 40%;
+  }
 
-    &__certificates-wrapper{
-      position: absolute;
-      width: 40%;
-      bottom: 15vh;
-      right: 2vh;
-      top: 5vh;
-    }
+  &__certificates-wrapper {
+    position: absolute;
+    top: 5vh;
+    right: 2vh;
+    bottom: 15vh;
+    width: 40%;
+  }
 
-    &__text{
-      font-weight: 700;
-      margin-bottom: 5%;
-      font-size: 8vh;
-      color: white;
-    }
+  &__text {
+    margin-bottom: 5%;
+    color: #ffffff;
+    font-size: 8vh;
+    font-weight: 700;
+  }
 
-    &__skills{
-      display: inline-block;
-      width: 20vh;
-      margin: 3vh;
-      margin-top: 8vh;
-    }
+  &__skills {
+    display: inline-block;
+    width: 20vh;
+    margin: 3vh;
+    margin-top: 8vh;
+  }
 
-    &__certificate{
-      height: 20vh;
-      margin: 3vh;
-      transition: 0.3s;
+  &__certificate {
+    height: 20vh;
+    margin: 3vh;
+    transition: .3s;
 
-      &:hover{
-        height: 20.1vh;
-        margin: 3.1vh;
-      }
-    }
-
-    &__stone{
-      position: absolute;
-      width: 100%;
-      left: 0px;
-      bottom: 0px;
+    &:hover {
+      height: 20.1vh;
+      margin: 3.1vh;
     }
   }
-  
+
+  &__stone {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+#green_pipe {
+  position: absolute;
+  top: -25%;
+  left: 40%;
+  width: 35vh;
+  height: 150vh;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1400px) {
+  .skill-certificate {
+    min-height: 240vh;
+  }
+
   #green_pipe {
     position: absolute;
-    left: 40%;
-    top: -25%;
-    height: 150vh;
-    width: 35vh;
-    z-index: 10;
+    top: auto;
+    right: 1%;
+    bottom: 60vh;
+    left: auto;
+    width: 25vh;
+    height: auto;
+    transform: scaleY(2.4);
   }
-  
-  @media screen and (max-width: 1400px) {
-    .skill-certificate {
-      min-height: 240vh;
-    }
-  
-    #green_pipe {
-      position: absolute;
-      left: auto;
-      right: 1%;
-      top: auto;
-      bottom: 60vh;
-      height: auto;
-      width: 25vh;
-      transform: scaleY(2.4);
-    }
-  
-    #skills_wrapper {
-      position: relative;
-      width: 60%;
-      left: auto;
-      bottom: auto;
-      top: 5vh;
-      padding-bottom: 5vh;
-      border-bottom: 3px white solid;
-    }
-  
-    .skills {
-      display: inline-block;
-      width: 100%;
-      left: 0;
-      margin: auto;
-    }
-  
-    #certificates_wrapper {
-      position: relative;
-      width: 60%;
-      bottom: 10vh;
-      right: auto;
-    }
-  
-    .certificates {
-      margin: 0;
-      margin-top: 2vh;
-      left: 0;
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .skill-certificate {
-      min-height: 210vh;
 
-      &__text{
-        font-size: 4vh;
-      }
-
-      
-    }
-  
-    #certificates_wrapper {
-      position: relative;
-  
-      width: 40%;
-      left: 5%;
-      bottom: 5vh;
-    }
-  
-    #skills_wrapper {
-      position: relative;
-      left: 5%;
-      padding-bottom: 2vh;
-      width: 40%;
-    }
-  
-    #green_pipe {
-      bottom: 67vh;
-      width: 15vh;
-      transform: scaleY(3.4);
-    }
+  #skills_wrapper {
+    position: relative;
+    top: 5vh;
+    bottom: auto;
+    left: auto;
+    width: 60%;
+    padding-bottom: 5vh;
+    border-bottom: 3px #ffffff solid;
   }
-  
+
+  .skills {
+    display: inline-block;
+    left: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  #certificates_wrapper {
+    position: relative;
+    right: auto;
+    bottom: 10vh;
+    width: 60%;
+  }
+
+  .certificates {
+    left: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-certificate {
+    min-height: 210vh;
+
+    &__text {
+      font-size: 4vh;
+    }
+
+
+  }
+
+  #certificates_wrapper {
+    position: relative;
+
+    bottom: 5vh;
+    left: 5%;
+    width: 40%;
+  }
+
+  #skills_wrapper {
+    position: relative;
+    left: 5%;
+    width: 40%;
+    padding-bottom: 2vh;
+  }
+
+  #green_pipe {
+    bottom: 67vh;
+    width: 15vh;
+    transform: scaleY(3.4);
+  }
+}

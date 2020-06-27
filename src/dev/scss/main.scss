@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700,900");
 
 #app {
-    font-family: 'Roboto';
+  font-family: 'Roboto';
 }
 
 html,
-body{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .space_sections {
-    position: relative;
-    height: 100vh;
-    background-color: #2e005d;
+  position: relative;
+  height: 100vh;
+  background-color: #2e005d;
 }
 
 .stars {
-    position: absolute;
-    opacity: 0.5;
-    width: 50vh;
-    z-index: 0;
+  position: absolute;
+  width: 50vh;
+  opacity: .5;
+  z-index: 0;
 }
 
 #sitemap {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 @import 'coin.scss';
 @import './settings/_reset.scss';
