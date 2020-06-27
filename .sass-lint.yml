@@ -43,7 +43,6 @@ rules:
     - style: long
   hex-notation:
     - 1
-    - style: lowercase
   id-name-format:
     - 0
     - convention: hyphenatedbem
@@ -64,7 +63,7 @@ rules:
     - max-depth: 3
   no-color-keywords: 1
   no-color-literals: 0
-  no-css-comments: 1
+  no-css-comments: 0
   no-debug: 1
   no-duplicate-properties: 1
   no-empty-rulesets: 1
@@ -131,5 +130,5 @@ rules:
   variable-name-format:
     - 1
     - allow-leading-underscore: true
-      convention: hyphenatedlowercase
+      convention: camelcase
   zero-unit: 0
