@@ -5,10 +5,10 @@
 
   &__title {
     position: absolute;
-    top: 10vh;
-    left: 10vh;
+    top: 6vw;
+    left: 3vw;
     color: #000000;
-    font-size: 10vh;
+    font-size: 6vw;
     font-weight: 900;
     text-align: center;
     text-shadow: 0 6px 4px rgba(0, 0, 0, .25);
@@ -16,6 +16,21 @@
 
     & span {
       color: $highlight;
+    }
+
+    @media #{$tablet-l-max} {
+      top: 15vw;
+      font-size: 8vw;
+    }
+
+    @media #{$tablet-s-max} {
+      top: 20vw;
+      font-size: 12vw;
+    }
+
+    @media #{$mobile-l-max} {
+      top: 30%;
+      font-size: 17vw;
     }
   }
 
@@ -30,9 +45,13 @@
   &__city {
     position: absolute;
     right: 0;
-    bottom: 43vh;
-    width: 85vh;
+    bottom: 27vw;
+    width: 40vw;
     z-index: 1;
+
+    @media #{$laptop-max} {
+      width: 80%;
+    }
   }
 
   &__front {
@@ -47,31 +66,21 @@
     & a span {
       position: absolute;
       right: 5%;
-      bottom: 5vh;
-      width: 8vh;
-      height: 8vh;
+      bottom: 5vw;
+      width: 8vw;
+      height: 8vw;
       transform: rotate(-45deg);
       transition: .3s;
-      border-bottom: .5vh solid #ffffff;
-      border-left: .5vh solid #ffffff;
+      border-bottom: .5vw solid $cWhite;
+      border-left: .5vw solid $cWhite;
+      z-index: 2;
       animation: down 2s infinite;
       box-sizing: border-box;
-
+      
       &:hover {
-        border-color: #000000;
+        border-color: $cBlack;
       }
     }
-  }
-}
-
-@media (orientation: portrait) {
-  .my_title {
-    top: auto;
-    bottom: 20vh;
-    left: auto;
-    width: 100%;
-    font-size: 5vh;
-    text-align: center;
   }
 }
 
