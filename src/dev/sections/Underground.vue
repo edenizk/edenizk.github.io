@@ -17,7 +17,7 @@
         href="https://youtu.be/sIhYExeApXE"
         target="_blank"
         src="../../assets/svg/chest_idle.svg">
-          <span class="undergrd__chestText">Hi, wanna see my video? 😊</span>
+          <span class="undergrd__chestText">Hey! wanna see my video? 😊</span>
         </a>
       <img
         class="undergrd__stone"

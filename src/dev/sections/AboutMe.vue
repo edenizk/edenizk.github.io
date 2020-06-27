@@ -22,7 +22,7 @@
       My name is Ergin Deniz Kösecioğlu,
       <br />but...
       <br />You can call me
-      <span style="color: #0BFFFF">Deniz</span> :).
+      <span style="color: #0BFFFF">Deniz</span> 😋.
       <br />I am an IT student who is a tireless
       seeker of knowledge and looking for new challenges in programming.
       also trying to learn how to make good design.
