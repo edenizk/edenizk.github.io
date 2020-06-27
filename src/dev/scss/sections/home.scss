@@ -30,19 +30,9 @@
   &__city {
     position: absolute;
     right: 0;
-    bottom: 40vh;
+    bottom: 43vh;
     width: 85vh;
     z-index: 1;
-  }
-
-  &__sea {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40vh;
-    background-color: #0180ed;
-    z-index: 0;
   }
 
   &__front {
@@ -50,6 +40,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
   }
 
   &__down-arrow {
