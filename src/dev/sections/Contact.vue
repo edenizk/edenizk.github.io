@@ -18,7 +18,7 @@
       <div id="title_contact">
         You Have
         <br />A Cool Project?
-        <br />Just Contact Me :)
+        <br />Just Contact Me 😁
       </div>
       <br />
       <a href="mailto:ergindenizkosecioglu@gmail.com"
