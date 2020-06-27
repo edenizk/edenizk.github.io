@@ -1,6 +1,9 @@
 .about-me {
+  display: flex;
   position: relative;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   background-color: $cBg;
   overflow: hidden;
 
@@ -43,18 +46,15 @@
   }
 
   &__text {
-    position: absolute;
-    top: 20vh;
-    left: 25%;
+    position: relative;
     width: 50%;
+    margin-top: 150px;
     color: #ffffff;
     font-size: 5vh;
-
     font-weight: 100;
     line-height: 61px;
     text-align: center;
     z-index: 10;
-
 
   }
 }
@@ -69,11 +69,6 @@
 }
 
 @media only screen and (max-width: 1400px) {
-  #about_me {
-    position: relative;
-    height: 100vh;
-    background-color: $cBg;
-  }
 
   #about_me_text {
     position: absolute;
