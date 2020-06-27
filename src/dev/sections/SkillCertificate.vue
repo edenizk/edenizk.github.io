@@ -16,24 +16,36 @@
                 <div class="coin"></div>
                 <div class="coin"></div>
             </div>
-            <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-certificate__skills"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-offset="-50">
                 <div class="coin_text">React</div>
                 <div class="coin"></div>
                 <div class="coin"></div>
                 <div class="coin"></div>
             </div>
-            <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="600">
+            <div class="skill-certificate__skills"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            data-aos-offset="-50">
                 <div class="coin_text">Git</div>
                 <div class="coin"></div>
                 <div class="coin"></div>
                 <div class="coin"></div>
             </div>
-            <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="800">
+            <div class="skill-certificate__skills"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            data-aos-offset="-50">
                 <div class="coin_text">Python</div>
                 <div class="coin"></div>
                 <div class="coin"></div>
             </div>
-            <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="skill-certificate__skills"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-offset="-50">
                 <div class="coin_text">SQL</div>
                 <div class="coin"></div>
                 <div class="coin"></div>
@@ -68,7 +80,8 @@
             <a target="_blank"
                 href="https://www.datacamp.com/statement-of-accomplishment/course/2d0975892b23bdbfd3de44028229f3cfbcff121f"
                 data-aos="zoom-in"
-                data-aos-delay="400">
+                data-aos-delay="400"
+                data-aos-offset="-50">
                 <img
                     class="skill-certificate__certificate"
                     src="../../assets/materials/certificates/datacamp_certificate1.svg"
@@ -78,7 +91,8 @@
             <a target="_blank"
                 href="https://www.datacamp.com/statement-of-accomplishment/course/be0ce43746c9cf3d0f0dfd55ef663f810042f8f9"
                 data-aos="zoom-in"
-                data-aos-delay="600">
+                data-aos-delay="600"
+                data-aos-offset="-50">
                 <img
                     class="skill-certificate__certificate"
                     src="../../assets/materials/certificates/datacamp_certificate2.svg"
@@ -88,7 +102,8 @@
             <a target="_blank"
                 href="https://www.datacamp.com/statement-of-accomplishment/course/98327bb4212ce8de6aedac926079fb0c0f537fc4"
                 data-aos="zoom-in"
-                data-aos-delay="800">
+                data-aos-delay="800"
+                data-aos-offset="-50">
                 <img
                     class="skill-certificate__certificate"
                     src="../../assets/materials/certificates/datacamp_certificate3.svg"
@@ -98,7 +113,8 @@
             <a target="_blank"
                 href="https://analytics.google.com/analytics/academy/certificate/vSyxlz4QTmySfxl24TB1KQ"
                 data-aos="zoom-in"
-                data-aos-delay="1000">
+                data-aos-delay="1000"
+                data-aos-offset="-50">
                 <img
                     class="skill-certificate__certificate"
                     src="../../assets/materials/certificates/google_analytics.svg"

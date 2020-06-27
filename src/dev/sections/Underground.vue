@@ -23,6 +23,7 @@
         class="undergrd__stone"
         data-aos="fade-left"
         data-aos-easing="ease-in-sine"
+        data-aos-offset="-50"
         src="../../assets/svg/stone.svg"
         alt="stones"
       />
