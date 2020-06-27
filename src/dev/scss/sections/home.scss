@@ -15,7 +15,8 @@
     z-index: 10;
 
     & span {
-      color: $highlight;
+      color: $cWhite;
+      font-weight: 200;
     }
 
     @media #{$tablet-l-max} {

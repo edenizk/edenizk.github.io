@@ -12,8 +12,7 @@
         IT guy -
       </span>
       <br />
-      <br />
-      <span style="font-weight: 200;">Good Bye</span>
+      <span>Good Bye</span>
     </div>
     <img
       class="stars"
