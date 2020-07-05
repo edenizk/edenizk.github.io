@@ -4,6 +4,10 @@
 @import './settings/_reset.scss';
 @import './settings/variables.scss';
 
+//components
+@import './components/waves.scss';
+@import './components/overlaymenu.scss';
+
 @import './navigation.scss';
 @import './sections/home.scss';
 @import './sections/underground.scss';
@@ -12,7 +16,6 @@
 @import './sections/projects.scss';
 @import './sections/contact.scss';
 @import './sections/end.scss';
-@import './components/waves.scss';
 
 #app {
   font-family: 'Roboto';

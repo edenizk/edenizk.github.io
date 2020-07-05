@@ -67,6 +67,10 @@
 
   &__tempText {
     padding: 0px 40px;
+
+    @media #{$mobile-m-max} {
+      padding: 0 20px;
+    }
   }
 }
 

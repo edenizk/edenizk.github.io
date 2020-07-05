@@ -1,9 +1,19 @@
 .skill-certificate {
+  display: flex;
   // overflow: hidden;
   position: relative;
+  flex-direction: column;
   min-height: 110vh;
   background-color: #3a3532;
   text-align: center;
+
+  @media #{$laptop-m-max} {
+    min-height: 130vh;
+  }
+
+  @media #{$laptop-max} {
+    flex-direction: column;
+  }
 
   &__skill-wrapper {
     position: absolute;
@@ -11,6 +21,14 @@
     bottom: 15vh;
     left: 2vh;
     width: 40%;
+
+    @media #{$laptop-max} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 25px;
+    }
   }
 
   &__certificates-wrapper {
@@ -19,6 +37,15 @@
     right: 2vh;
     bottom: 15vh;
     width: 40%;
+
+    @media #{$laptop-max} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 65px;
+      padding-bottom: 150px;
+    }
   }
 
   &__text {
@@ -45,6 +72,34 @@
     }
   }
 
+  &__pipe {
+    position: absolute;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    z-index: 10;
+
+    @media #{$laptop-m-max} {
+      height: 175vh;
+    }
+
+    @media #{$laptop-max} {
+      top: 30%;
+      right: 1%;
+      left: auto;
+      width: 25vh;
+      height: auto;
+      transform: scaleY(3);
+    }
+
+    @media #{$mobile-m-max} {
+      top: 37%;
+      width: 15vh;
+      transform: scaleY(4.5);
+    }
+  }
+
   &__stone {
     position: absolute;
     bottom: 0;
@@ -53,61 +108,61 @@
   }
 }
 
-#green_pipe {
-  position: absolute;
-  top: -25%;
-  left: 40%;
-  width: 35vh;
-  height: 150vh;
-  z-index: 10;
-}
+// #green_pipe {
+//   position: absolute;
+//   top: -25%;
+//   left: 40%;
+//   width: 35vh;
+//   height: 150vh;
+//   z-index: 10;
+// }
 
 @media screen and (max-width: 1400px) {
-  .skill-certificate {
-    min-height: 240vh;
-  }
+  // .skill-certificate {
+  //   min-height: 240vh;
+  // }
 
-  #green_pipe {
-    position: absolute;
-    top: auto;
-    right: 1%;
-    bottom: 60vh;
-    left: auto;
-    width: 25vh;
-    height: auto;
-    transform: scaleY(2.4);
-  }
+  // #green_pipe {
+  //   position: absolute;
+  //   top: auto;
+  //   right: 1%;
+  //   bottom: 60vh;
+  //   left: auto;
+  //   width: 25vh;
+  //   height: auto;
+  //   transform: scaleY(2.4);
+  // }
 
-  #skills_wrapper {
-    position: relative;
-    top: 5vh;
-    bottom: auto;
-    left: auto;
-    width: 60%;
-    padding-bottom: 5vh;
-    border-bottom: 3px #ffffff solid;
-  }
+  // #skills_wrapper {
+  //   position: relative;
+  //   top: 5vh;
+  //   bottom: auto;
+  //   left: auto;
+  //   width: 60%;
+  //   padding-bottom: 5vh;
+  //   border-bottom: 3px #ffffff solid;
+  // }
 
-  .skills {
-    display: inline-block;
-    left: 0;
-    width: 100%;
-    margin: auto;
-  }
+  // .skills {
+  //   display: inline-block;
+  //   left: 0;
+  //   width: 100%;
+  //   margin: auto;
+  // }
 
-  #certificates_wrapper {
-    position: relative;
-    right: auto;
-    bottom: 10vh;
-    width: 60%;
-  }
+  // #certificates_wrapper {
+  //   position: relative;
+  //   right: auto;
+  //   bottom: 10vh;
+  //   width: 60%;
+  // }
 
-  .certificates {
-    left: 0;
-    width: 100%;
-    margin: 0;
-    margin-top: 2vh;
-  }
+  // .certificates {
+  //   left: 0;
+  //   width: 100%;
+  //   margin: 0;
+  //   margin-top: 2vh;
+  // }
 }
 
 @media screen and (max-width: 600px) {
@@ -136,9 +191,9 @@
     padding-bottom: 2vh;
   }
 
-  #green_pipe {
-    bottom: 67vh;
-    width: 15vh;
-    transform: scaleY(3.4);
-  }
+  // #green_pipe {
+  //   bottom: 67vh;
+  //   width: 15vh;
+  //   transform: scaleY(3.4);
+  // }
 }

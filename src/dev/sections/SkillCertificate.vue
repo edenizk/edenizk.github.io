@@ -52,9 +52,7 @@
             </div>
         </div>
         <img id="green_pipe"
-        data-aos="fade-up"
-        data-aos-easing="ease-in-sine"
-        data-aos-delay="200"
+        class="skill-certificate__pipe"
         src="../../assets/materials/skills_certificates/green_pipe.svg" alt="green pipe">
 
         <div class="skill-certificate__certificates-wrapper">
@@ -126,6 +124,7 @@
         <img class="skill-certificate__stone"
          data-aos="fade-left"
         data-aos-easing="ease-in-sine"
+        data-aos-offset="-50"
         src="../../assets/svg/stone.svg" alt="stones">
     </section>
 </template>

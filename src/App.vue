@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navigation/>
+    <OverlayMenu/>
     <Home msg="Welcome to Your Home App"/>
     <Underground/>
     <SkillCertificate/>
@@ -14,7 +14,8 @@
 <script>
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navigation from './dev/Navigation.vue';
+// import Navigation from './dev/Navigation.vue';
+import OverlayMenu from './dev/components/OverlayMenu.vue';
 import Home from './dev/sections/Home.vue';
 import Underground from './dev/sections/Underground.vue';
 import SkillCertificate from './dev/sections/SkillCertificate.vue';
@@ -30,7 +31,8 @@ AOS.init();
 export default {
   name: 'App',
   components: {
-    Navigation,
+    // Navigation,
+    OverlayMenu,
     Home,
     Underground,
     SkillCertificate,

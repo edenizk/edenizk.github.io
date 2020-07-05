@@ -82,6 +82,18 @@
     color: $cPurpleText;
     opacity: 0;
 
+    @media #{$laptop-max} {
+      top: -7.1vw;
+      right: -13.2vw;
+      margin-left: 16vw;
+    }
+
+    @media #{$mobile-l-max} {
+      top: -16.1vw;
+      margin-left: 12vw;
+      padding: 10px 20px;
+    }
+
     &::before {
       position: absolute;
       bottom: -24px;
