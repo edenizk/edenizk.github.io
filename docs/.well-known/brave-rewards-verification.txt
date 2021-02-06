@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: edenizk.github.io
+Token: 5619ed079833d954976776595f53bd1ad80870e901cbf19a04b27820c3d2c00e
