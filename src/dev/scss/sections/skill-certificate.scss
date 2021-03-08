@@ -79,6 +79,7 @@
     width: 100%;
     height: 150vh;
     z-index: 10;
+    pointer-events: none;
 
     @media #{$laptop-m-max} {
       height: 175vh;
