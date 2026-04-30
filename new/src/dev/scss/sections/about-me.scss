@@ -1,0 +1,113 @@
+.about-me {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $cBg;
+  overflow: hidden;
+
+  &__stars {
+    position: absolute;
+    width: 50vh;
+    opacity: .5;
+    z-index: 0;
+
+    &--left {
+      bottom: 0;
+      left: 5vh;
+    }
+
+    &--right {
+      top: 0;
+      right: 5vh;
+    }
+  }
+
+  &__comet {
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    width: 50vh;
+  }
+
+  &__title {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__text {
+    position: relative;
+    width: 50%;
+    margin-top: 150px;
+    color: #ffffff;
+    font-size: 5vh;
+    font-weight: 100;
+    line-height: 61px;
+    text-align: center;
+    z-index: 10;
+
+    @media #{$tablet-l-max} {
+      width: 75%;
+      margin-top: 200px;
+    }
+
+    @media #{$tablet-s-max} {
+      width: 100%;
+      padding: 0 20px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}
+
+//TODO: CLEAN IT UP AFTER ADDING PROJECTS
+@media #{$laptop-max} {
+  #about_me_text {
+    // left: 10%;
+    width: 80%;
+    /* font-size: 3vh; */
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+
+  #about_me_text {
+    // position: absolute;
+    top: 20vh;
+    // left: 10%;
+    // font-size: 3vh;
+  }
+
+  #about_me_comet {
+    top: auto;
+    right: 5vh;
+    bottom: 5vh;
+    left: auto;
+    width: 40vh;
+  }
+}
+
+@media (orientation: portrait) {
+
+  .stars {
+    position: absolute;
+    width: 20vh;
+  }
+
+  #about_me_comet {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    width: 20vh;
+  }
+}
