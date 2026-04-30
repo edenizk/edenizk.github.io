@@ -1,3 +1,5 @@
+@use './settings/variables' as *;
+
 .nav {
   display: flex;
   position: fixed;

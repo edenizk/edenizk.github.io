@@ -1,3 +1,5 @@
+@use '../settings/variables' as *;
+
 .undergrd { $p: &;
   position: relative;
   background-color: $cBrownBg;

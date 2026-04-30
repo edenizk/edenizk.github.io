@@ -1,21 +1,18 @@
+@use './settings/variables' as *;
+@use 'coin';
+@use './settings/reset';
+@use './components/waves';
+@use './components/overlaymenu';
+@use './navigation';
+@use './sections/home';
+@use './sections/underground';
+@use './sections/skill-certificate';
+@use './sections/about-me';
+@use './sections/projects';
+@use './sections/contact';
+@use './sections/end';
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700,900");
-
-@import 'coin.scss';
-@import './settings/_reset.scss';
-@import './settings/variables.scss';
-
-//components
-@import './components/waves.scss';
-@import './components/overlaymenu.scss';
-
-@import './navigation.scss';
-@import './sections/home.scss';
-@import './sections/underground.scss';
-@import './sections/skill-certificate.scss';
-@import './sections/about-me.scss';
-@import './sections/projects.scss';
-@import './sections/contact.scss';
-@import './sections/end.scss';
 
 #app {
   font-family: 'Roboto';
