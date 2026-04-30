@@ -228,6 +228,93 @@
   /* Transition effects on hover (color) */
 }
 
+.projects {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    z-index: 1;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 2.5vh 2vw;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    text-align: left;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: #0bffff;
+    }
+
+    @media #{$tablet-s-max} {
+      width: 90vw;
+    }
+  }
+
+  &__card-title {
+    margin: 0 0 1vh;
+    color: #0bffff;
+    font-size: 2vh;
+    font-weight: 700;
+    word-break: break-word;
+  }
+
+  &__card-desc {
+    flex: 1;
+    margin: 0 0 2vh;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.8vh;
+    line-height: 1.5;
+  }
+
+  &__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 2vh;
+  }
+
+  &__tag {
+    padding: 0.2em 0.7em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4vh;
+  }
+
+  &__card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__stars-count {
+    font-size: 1.6vh;
+    opacity: 0.7;
+  }
+
+  &__card-link {
+    color: #0bffff;
+    font-size: 1.6vh;
+    text-decoration: none;
+    border-bottom: 1px solid #0bffff;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
 @media (orientation: portrait) {
   #project_head_info {
     top: 2vh;

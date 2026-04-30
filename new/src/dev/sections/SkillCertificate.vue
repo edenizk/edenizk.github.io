@@ -2,49 +2,81 @@
   <section id="skills_and_certifications" class="skill-certificate">
     <div class="skill-certificate__skill-wrapper">
       <div class="skill-certificate__text">Skills</div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-once="true">
-        <div class="coin_text">HTML/(S)CSS</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
+
+      <div class="skill-certificate__zone">
+        <div class="skill-certificate__zone-label">⚡ Frontend</div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-once="true">
+          <div class="coin_text">HTML / CSS</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+          <div class="coin_text">JavaScript</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+          <div class="coin_text">TypeScript</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true">
+          <div class="coin_text">React / Next.js</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="800" data-aos-once="true">
+          <div class="coin_text">Vue / Nuxt.js</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
       </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
-        <div class="coin_text">PHP</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
+
+      <div class="skill-certificate__zone">
+        <div class="skill-certificate__zone-label">🛠 Backend &amp; Tools</div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-once="true">
+          <div class="coin_text">Node.js</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+          <div class="coin_text">Python</div>
+          <div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+          <div class="coin_text">PHP</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true">
+          <div class="coin_text">Kotlin</div>
+          <div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="800" data-aos-once="true">
+          <div class="coin_text">Docker</div>
+          <div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="1000" data-aos-once="true">
+          <div class="coin_text">PostgreSQL</div>
+          <div class="coin"></div><div class="coin"></div>
+        </div>
       </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
-        <div class="coin_text">Wordpress</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-      </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true">
-        <div class="coin_text">JS</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-      </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="800" data-aos-once="true">
-        <div class="coin_text">React/Next.js</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-      </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="1000" data-aos-once="true">
-        <div class="coin_text">Vue/Nuxt.js</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
-      </div>
-      <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="1200" data-aos-once="true">
-        <div class="coin_text">Flutter/Dart</div>
-        <div class="coin"></div>
-        <div class="coin"></div>
+
+      <div class="skill-certificate__zone">
+        <div class="skill-certificate__zone-label">🎨 Craft &amp; Workflow</div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-once="true">
+          <div class="coin_text">GrapesJS</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+          <div class="coin_text">Figma</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+          <div class="coin_text">Jest</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true">
+          <div class="coin_text">Webpack / Vite</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
+        <div class="skill-certificate__skills" data-aos="zoom-in" data-aos-delay="800" data-aos-once="true">
+          <div class="coin_text">Git</div>
+          <div class="coin"></div><div class="coin"></div><div class="coin"></div><div class="coin"></div>
+        </div>
       </div>
     </div>
     <img

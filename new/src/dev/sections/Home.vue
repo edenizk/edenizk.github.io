@@ -1,9 +1,9 @@
 <template>
   <section class="home" id="home">
-    <div class="home__title" data-aos="fade-up" data-aos-duration="3000">
+    <h1 class="home__title" data-aos="fade-up" data-aos-duration="3000">
       Ergin Deniz <br />Kösecioğlu<br />
-      <span>- Web Dev -</span>
-    </div>
+      <span>- Software Engineer &amp; Web Dev -</span>
+    </h1>
     <img
       class="home__sun"
       data-aos="fade-up-left"
